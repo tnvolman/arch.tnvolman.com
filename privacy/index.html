@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Arch theological review API</title>
+  <meta name="description" content="How Arch (arch.tnvolman.com) collects and uses account, API key, billing, review, and contact information.">
+  <link rel="canonical" href="https://arch.tnvolman.com/privacy">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arch — Built by The Forge">
+  <meta property="og:url" content="https://arch.tnvolman.com/privacy">
+  <meta property="og:title" content="Privacy Policy | Arch theological review API">
+  <meta property="og:description" content="Privacy Policy for the Arch theological review API at arch.tnvolman.com.">
+  <meta property="og:image" content="https://arch.tnvolman.com/static/arch-og.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TNVOLMAN">
+  <meta name="twitter:title" content="Privacy Policy | Arch theological review API">
+  <meta name="twitter:description" content="Privacy Policy for the Arch theological review API.">
+  <meta name="twitter:image" content="https://arch.tnvolman.com/static/arch-og.png">
+
+  <link rel="icon" href="/static/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --surface: #111111;
+      --surface2: #161616;
+
+      /* Crimson — reserved for ACTION and the REVIEW GATE only */
+      --crimson: #c0182a;
+      --crimson-dark: #9a1221;
+      --crimson-bg: rgba(192,24,42,0.10);
+
+      /* Gold — primary structural accent */
+      --gold: #c9a84c;
+      --gold-soft: rgba(201,168,76,0.45);
+      --gold-faint: rgba(201,168,76,0.14);
+      --gold-bg: rgba(201,168,76,0.04);
+
+      /* Type — all pass WCAG AA on --black */
+      --white: #f0ece4;
+      --text: #b8b2a8;      /* 9.2:1  body copy */
+      --muted: #8f8a83;     /* 5.3:1  secondary */
+      --faint: #6f6a64;     /* 3.4:1  fine print / non-essential only */
+
+      /* Neutral structure — no tinted hairlines */
+      --line: rgba(255,255,255,0.07);
+      --line-strong: rgba(255,255,255,0.13);
+
+      --green: #5cb85c;
+      --amber: #d4a017;
+
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+      --serif: 'EB Garamond', Georgia, serif;
+      --display: 'Cinzel', Georgia, serif;
+
+      /* Wordmark tracking is em-based so it scales with the type.
+         Two values, stated as a rule: display sizes track tight,
+         UI sizes track loose. Never a third. */
+      --track-mark-ui: 0.30em;
+      --track-mark-display: 0.08em;
+      /* Mark is locked to the wordmark's CAP HEIGHT, not its em box.
+         Asset is cropped to the glyph, so these numbers are literal:
+         no hidden transparent padding inflating the gap.
+           --mark-cap    height of the mark = Cinzel cap height
+           --mark-aspect measured from the cropped PNG (364 x 218)
+           --mark-gap    tight, because 'A' is diagonal and already
+                         supplies optical air a vertical stem would not
+           --mark-rise   optical lift: caps sit high in a 1em line box,
+                         so centring on the box centres too low.
+                         This is the ONE number to nudge by eye. */
+      --mark-cap: 0.70em;
+      --mark-aspect: 1.6697;
+      --mark-gap: 0.24em;
+      --mark-rise: -0.015em;
+
+      --mark: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWwAAADaCAYAAACCe3hlAAAJtUlEQVR42u3deYycdR3H8c+2C/QCg9D6IGCJHMKzBlQQRYpMPVC8sJquCpYoalBC1hOoCQnVxCiEqK1RMAaJBWnc4hGIEjDKU0QELJe4E5HDNFQZOQLR4mppWf/YqaloOZft88y+Xsmk/zSZzPf723eenZ2j77aVx8x++PT1p4a6u6XVaV81WXd29YWtGX2fv/+Txg618PDR97W/0z/aP2NOkq+YR+2dl2TSgt2/4+yZm50LqINHkrylry9j08wCoN6xbnXaNyaJYAM0INaCDdCQWAs2QENiLdgADYm1YAM0JNaCDdCQWAs2QENiLdgADYm1YAM0JNaCDdCQWAs2QENiLdgADYm1YAM0JNaCDdCQWAs2QENiLdgADYm1YAM0JNaCDdCQWAs2QENiLdgADYm1YAM0JNaCDdCQWAs2QENinST9o/07PdqXnJ1k1yQzk8xK8oIkc5LsnmSfJP12ArD9Yp0k/QsHV29IsnRb/2Httw/dYcNZo/OT7J9kv+6/A0lek2S2fQFiPTme8sr5sJNveizJXd3bfwwPL54+b2jkFUkWJDkyycLuFTmAWG+PYG/L4ODqzUlu6t6Wj42lb80e5auSvC/JYJL5dgqIdQ2C/UR9fRlL2lsCfnpVlANJlnRvL7ZjQKyfm+ftVSKtTnuk1WkvPfrjg3sneUeSX9o1INY1uMLe5pX3smWPJ/lpkp9WRXlIklOSnJhkhv0DYl2DK+xtXHXf1uq0T55x7vz9k5ybZNQ5AMS6hsHe4rUfvGJ9q9M+bca58w9IclGSMWcCEOsaBvsJ4T4x46/p/rWzAYh1TYO9RavT/u3R97WPSnJCko5zAoh1TYOdjL8ssNVpX/KC8w44KMkq5wUQ65oGe4tXLvrJI61O+/iMv/nmEWcHEOuaBnuLVqe9OskrklzjDAFTPda1DnY32uvuXzHwhiTnOEvAVI517YOdjH9mSavTPiPJR5JsdK6AqRjrRgR7q6vt7yZ5Y5IHnS9gqsW6UcHuRvvaJEckucM5A6ZSrBsX7G6075r5rZcdmeRW5w2YKrFuZLCT5DXv+fFDu6yYf0ySEecOmAqxbmywk+RVg1c8MOPc+W9N8lfnD+j1WDc62Mn4Z5EkeU+8egTo8Vg3PthJ0uq0r0vyRWcR6OVY90Swk2Rs1byzk6x1JoFejXXPBHvhwmpTkk/E52oDPRrrngl2krQ67bVJfuB8Ar0Y62QSvtNxki1N774++5bJvLNNGx8d7RufJzTVla1O+1ZjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgLrr69UHVhXl25Nc1EMP6ZJWp33qJM7vnCQf9SPCZBy3uSsG3j8wuHqjUTy5/h5+bDsm2bWHHs+sSb6/mT02P+rpV2MrBk4U66dnmhEA2zHWb1s4uHqDUQg2INaCDSDWgg2INYINiLVgA4i1YANijWADYi3YAGIt2IBYCzaAWAs2INYINiDWgg0g1oINiDWCDYi1YAOItWADYo1gA2It2IBYi7VgA2KNYANiLdiAWCPYgFgj2IBYCzYg1gg2INaCDSDWgg2INYINiLVgA2KNYANijWADYi3YgFgj2IBYI9iAWAs2INYINiDWCDaItVgLNiDWCDYg1gg2iDWCDYg1gg2ItWADYo1gA2KNYANiLdiAWCPYgFgj2CDW9Lh+I2CKWNLqtC/uqUc02LZVV9gACDYAgg0g2AAINgCCDSDYAAg2AIININgACDYAgg0g2AAINoBgAyDYAAg2gGADINgACDaAYAMg2B4bgKglSeZYLyDYzbCL9bKVHY0Awa6v3awXv3Eh2M1wgPWylV2NAMGurwOtl6281AgQ7Bq6bnjxzCQHWS9+40Kwa27j0MiRSWZYL1s5eGR4sT88Itg19Ear5QlmPTA0cpgxINj1s8hq+T/ebAQIdo1URXlUkpdZLf/HCUaAYNfLSdbKNuxfFeWrjQHBroG1w+98SZLjrZUn8SkjQLBrYMPQ3WfGW5B5cu+rinJfY0Cwt6OqKA9O8iEr5SlMT/IFY0Cwt5OxZcumJTkvyQ5WytNwQlWULWNAsLeDNecPDyV5nXXyDJx328pjZhsDgj2JqqI8IsnZVskzdODDp69fbgwI9iS5bvgdeyb5YfyhkWfnI1VRnmwMCPbz7ObhY+duHLrnqiR7WCPPwTeronyvMSDYz5MbfrRot78Nrft5ktIKeY6mJ7mkKsp3GwWCPcGqotxv9JQ7fp3kEOtjguyYZLgqysVGgWBPXKwXJPlNfFYIE2+HJKs8p41gT0ysT0ryiyS7WxvPk+lJzq+Kcnn3tf0g2M/E8PDi6VVRnpPkgng1CJNjaM35w5def/GxuxgFgv30r6r3mTc08sskp1kVk2zRPz+3bm1VlC83CgT7qWN9YpLfJXm9NbGd7J/kN92n40Cwn+jm4WPnVkX54yTfS7KzFbGdzUlyQVWUl97wo0W7GQeCnWRsLH1VUS7529C625O822qomfeOnnLHH6ui/KQ/SDKlg10V5eFr9iivTbIyyYushZp6YZKvrzl/+MaqKA83DqZUsG9cddzeVVGuTHJ9fNoezXFoxp/bXulpEno+2FVRzq+K8mv/+PSddyZZkqTPKmjgz86S0VPu+ENVlGf4qFZ6LthVUb6ye0V9V8a/W28nK6Dhdk/ylYdPX39PVZRLf/X9t+9qJDQ22N03vhxXFeU1SW7uXlH3Gz09Zl6SL2/+7J/urYryG1VRHmQkNCLYY8uWTauKckFVlMvnDY3cm+QnSY4ybqaA2UlOTdKuivLaqig/7B2TTJQJe+54eHjx9HlDI4cnGUyyOMmexjuhLmx12pP2Bo6qKL/RDQ/P3b+SXJnk0jlf3feKw46//EEj4dl41k9NXH11q7/vA/cfkmRBkiMzNPKmJJ6/g/+1U5J3JXnXhs/c/XhVlGuTXJXkmv5v73f9guMu+7sRMSHBvvNnx+7055PW7Zvxt+nu170N5AP3vzrJDCOEZ2RaksO7t2w6+a7NVVH+PsmtSX6f8Y9juHvuioF7BwZXbzQu/ivYay9/56wNH7v7S0lmda+QZ2X8ebidk8z980nr9kqPfLs61ND0jH8Zx399IccDQyOPV0X5lyT3JXmoe3s0yWNJNoytmnfmwoXVJuObYsHe/Fj/zIy/xA6o15X4Xt3b/9hrdOZZSQR7Ch4KAAQbAMEGEGwABBsAwQYQbAAEGwDBBhBsAAQbAMEGEGwABBsAwQYQbAAEG0CwARBsAAQbQLABEGwABBtAsAGoh/7Nm/r/kWSpUdTe7ZN8f5clWW/s9XTLhjmbTGHq+TfCFY5E8d1bVQAAAABJRU5ErkJggg==");
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--serif);
+      background: var(--black);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection { background: rgba(201,168,76,0.25); color: var(--white); }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    /* ── LOCKUP ────────────────────────────────────────────
+       One component, three sizes. Set .lockup font-size and the
+       mark, wordmark and tracking all scale together. The mark is
+       a single base64 source painted via --mark: zero duplication.
+    ------------------------------------------------------- */
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: var(--mark-gap);
+      text-decoration: none;
+    }
+
+    .lockup .mark,
+    .hero-mark .mark {
+      background-image: var(--mark);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: block;
+      flex-shrink: 0;
+      height: var(--mark-cap);
+      width: calc(var(--mark-cap) * var(--mark-aspect));
+      transform: translateY(var(--mark-rise));
+    }
+
+    .lockup .wordmark {
+      font-family: var(--display);
+      font-size: 1em;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: var(--track-mark-ui);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--gold);
+      color: var(--black);
+      padding: 12px 20px;
+      font-family: var(--display);
+      font-size: 12px;
+      letter-spacing: 2px;
+      z-index: 200;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* ── TOP STRIPE ───────────────────────────────────────── */
+    .top-stripe { height: 3px; width: 100%; background: var(--crimson); }
+
+    /* ── NAV ──────────────────────────────────────────────── */
+    nav {
+      padding: 18px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+    .nav-brand .lockup { font-size: 19px; }
+    .nav-brand .label { display: block; }
+
+    .nav-links { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+
+    .nav-links a {
+      font-family: var(--display);
+      font-size: 10.5px;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    /* The only crimson in the nav — it is the action */
+    .nav-cta {
+      font-family: var(--display);
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      background: var(--crimson);
+      color: var(--white) !important;
+      padding: 11px 20px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover { background: var(--crimson-dark); }
+
+    /* ── HERO ─────────────────────────────────────────────── */
+    .hero {
+      padding: 96px 48px 84px;
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    /* ── ONE label style. Every small gold cap on the page
+       uses .label; .label-sm is the only permitted variant. ── */
+    .label {
+      font-family: var(--display);
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 4.5px;
+      color: var(--gold);
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+
+    .label-sm { font-size: 8.5px; letter-spacing: 3px; font-weight: 400; }
+
+    .hero-tagline {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 1.4px;
+      color: var(--gold);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      text-wrap: balance;
+    }
+
+
+    .hero-mark {
+      display: flex;
+      align-items: center;
+      gap: var(--mark-gap);
+      font-size: clamp(46px, 6.5vw, 78px);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: var(--display);
+      font-size: 1em;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: var(--track-mark-display);
+      line-height: 1;
+      margin: 0;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text);
+      line-height: 1.75;
+      margin-bottom: 30px;
+      max-width: 30em;
+    }
+
+    .verdict-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 34px;
+      flex-wrap: wrap;
+    }
+
+    .verdict {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      padding: 7px 14px;
+      border: 1px solid;
+    }
+
+    .verdict.approved { color: var(--green); border-color: rgba(92,184,92,0.4); }
+    .verdict.flagged  { color: var(--amber); border-color: rgba(212,160,23,0.4); }
+    .verdict.rejected { color: var(--crimson); border-color: rgba(192,24,42,0.5); background: var(--crimson-bg); }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn-primary {
+      font-family: var(--display);
+      font-size: 11.5px;
+      letter-spacing: 2.5px;
+      background: var(--crimson);
+      color: var(--white);
+      padding: 16px 32px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover { background: var(--crimson-dark); }
+
+    .btn-secondary {
+      font-family: var(--display);
+      font-size: 11.5px;
+      letter-spacing: 2.5px;
+      background: transparent;
+      color: var(--white);
+      padding: 16px 32px;
+      border: 1px solid var(--line-strong);
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: border-color 0.2s, color 0.2s;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Hero code preview — shows the product above the fold */
+    .hero-demo {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      font-family: var(--mono);
+      font-size: 12px;
+      line-height: 1.75;
+      overflow: hidden;
+    }
+
+    .hero-demo-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--line);
+      font-size: 9.5px;
+      letter-spacing: 2px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .hero-demo-bar .lat { color: var(--gold); }
+    .hero-demo pre { padding: 18px 20px; overflow-x: auto; white-space: pre; }
+
+    /* ── SECTIONS ─────────────────────────────────────────── */
+    section {
+      padding: 88px 48px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    section.tight { padding: 64px 48px; }
+    section.wide { max-width: 1120px; }
+
+    .section-divider { height: 1px; background: var(--line); }
+
+    .section-label { display: block; margin-bottom: 14px; }
+
+    h2 {
+      font-family: var(--display);
+      font-size: clamp(26px, 3.6vw, 38px);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 2.5px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 680px;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* ── PROBLEM ──────────────────────────────────────────── */
+    .problem-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1px;
+      background: var(--line);
+      margin-top: 44px;
+      border: 1px solid var(--line);
+    }
+
+    .stat-block { background: var(--black); padding: 36px 32px; }
+
+    .stat-number {
+      font-family: var(--display);
+      font-size: clamp(34px, 4.6vw, 52px);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label { font-size: 15px; color: var(--text); line-height: 1.65; }
+
+    .stat-source {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      color: var(--faint);
+      margin-top: 12px;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+    }
+
+    /* ── HOW IT WORKS ─────────────────────────────────────── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 1px;
+      background: var(--line);
+      margin-top: 44px;
+      border: 1px solid var(--line);
+    }
+
+    .step { background: var(--black); padding: 34px 30px; }
+
+    .step-num {
+      font-family: var(--display);
+      font-size: 40px;
+      font-weight: 900;
+      color: rgba(201,168,76,0.22);
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .step h3 {
+      font-family: var(--display);
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      color: var(--gold);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .step p { font-size: 15px; color: var(--text); line-height: 1.7; }
+
+    /* ── SCOPE ────────────────────────────────────────────── */
+    .scope-block {
+      margin-top: 44px;
+      padding: 30px 36px;
+      background: var(--gold-bg);
+      border-left: 3px solid var(--gold);
+    }
+
+    .scope-block h3 {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .scope-block p { font-size: 16px; line-height: 1.8; color: var(--text); margin-bottom: 12px; }
+    .scope-block p:last-child { margin-bottom: 0; }
+    .scope-block strong { color: var(--white); font-weight: 500; }
+
+    /* ── AUTHORITY — crimson, because this IS the review gate ── */
+    .authority-block {
+      background: var(--surface);
+      border-left: 3px solid var(--crimson);
+      padding: 32px 36px;
+      margin-top: 24px;
+    }
+
+    .authority-block h3 {
+      font-family: var(--display);
+      font-size: 12px;
+      letter-spacing: 3.5px;
+      color: var(--crimson);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .authority-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+    .authority-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 15.5px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .auth-level {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      color: var(--gold);
+      background: var(--gold-bg);
+      padding: 4px 9px;
+      white-space: nowrap;
+      margin-top: 4px;
+      border: 1px solid var(--gold-faint);
+      letter-spacing: 1px;
+    }
+
+    /* ── SPECS ────────────────────────────────────────────── */
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1px;
+      background: var(--line);
+      margin-top: 44px;
+      border: 1px solid var(--line);
+    }
+
+    .spec { background: var(--black); padding: 26px 28px; }
+
+    .spec dt {
+      font-family: var(--display);
+      font-size: 9.5px;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .spec dd {
+      font-family: var(--mono);
+      font-size: 14px;
+      color: var(--gold);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .spec .note { font-family: var(--serif); font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+
+    /* ── PRICING ──────────────────────────────────────────── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 44px;
+      font-family: var(--serif);
+    }
+
+    .pricing-table th {
+      font-family: var(--display);
+      font-size: 9.5px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 14px 22px;
+      text-align: left;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .pricing-table td {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    .pricing-table tr:hover td { background: var(--surface); }
+
+    .price-amount { font-family: var(--display); font-size: 19px; font-weight: 700; color: var(--gold); }
+
+    .recommended-badge {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      border: 1px solid var(--gold-faint);
+      padding: 3px 8px;
+      margin-left: 8px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    /* ── CODE ─────────────────────────────────────────────── */
+    .code-section { background: var(--surface); max-width: 100%; padding: 88px 0; }
+    .code-inner { max-width: 960px; margin: 0 auto; padding: 0 48px; }
+
+    .code-block {
+      background: var(--black);
+      border: 1px solid var(--line);
+      padding: 30px;
+      overflow-x: auto;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .code-lang {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: 2px;
+      color: var(--faint);
+      text-transform: uppercase;
+    }
+
+    .code-block pre {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      line-height: 1.8;
+      color: var(--text);
+      white-space: pre;
+    }
+
+    /* Syntax palette derived from the brand, not a terminal */
+    .code-comment { color: var(--faint); }
+    .code-key     { color: var(--gold); }
+    .code-string  { color: #d8cfa8; }
+    .code-flag    { color: var(--crimson); }
+
+    /* ── VALIDATION ───────────────────────────────────────── */
+    .validation-lead {
+      margin-top: 40px;
+      padding: 28px 34px;
+      background: var(--gold-bg);
+      border-left: 3px solid var(--gold);
+    }
+
+    .validation-lead p { font-size: 16.5px; line-height: 1.8; color: var(--text); }
+    .validation-lead strong { color: var(--white); font-weight: 500; }
+
+    .validation-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 28px;
+    }
+
+    .validation-chip {
+      background: var(--black);
+      flex: 1 1 180px;
+      padding: 20px 22px;
+    }
+
+    .validation-model {
+      font-family: var(--display);
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .validation-verdict {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1px;
+    }
+
+    .validation-caveat {
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-top: 20px;
+      line-height: 1.7;
+      max-width: 700px;
+    }
+
+    /* ── FORM ─────────────────────────────────────────────── */
+    .form-section {
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      max-width: 100%;
+      padding: 88px 0;
+    }
+
+    .form-inner { max-width: 700px; margin: 0 auto; padding: 0 48px; }
+
+    .request-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group.full { grid-column: 1 / -1; }
+
+    .form-group label {
+      font-family: var(--display);
+      font-size: 9.5px;
+      letter-spacing: 2.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--black);
+      border: 1px solid var(--line-strong);
+      color: var(--white);
+      padding: 14px 16px;
+      font-family: var(--serif);
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--gold); }
+
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    .form-group select option { background: var(--black); }
+
+    .form-consent {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      margin: 4px 0 -4px;
+    }
+
+    .form-consent input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      flex-shrink: 0;
+      width: 15px;
+      height: 15px;
+      margin-top: 3px;
+      background: transparent;
+      border: 1px solid var(--gold-soft);
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .form-consent input[type="checkbox"]:checked {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .form-consent input[type="checkbox"]:checked::after {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 8px;
+      margin: 1px 0 0 5px;
+      border: solid var(--black);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .form-consent label {
+      font-family: var(--serif);
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--muted);
+      cursor: pointer;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .form-consent a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-faint);
+    }
+
+    .form-consent a:hover { border-bottom-color: var(--gold); }
+
+    .form-submit {
+      grid-column: 1 / -1;
+      font-family: var(--display);
+      font-size: 11.5px;
+      letter-spacing: 3px;
+      background: var(--crimson);
+      color: var(--white);
+      padding: 18px 40px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      width: 100%;
+    }
+
+    .form-submit:hover:not(:disabled) { background: var(--crimson-dark); }
+
+    .form-submit:disabled {
+      background: #262626;
+      color: var(--faint);
+      cursor: not-allowed;
+    }
+
+    .form-status {
+      grid-column: 1 / -1;
+      display: none;
+      padding: 16px 20px;
+      font-family: var(--display);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .form-status.ok {
+      display: block;
+      background: rgba(92,184,92,0.08);
+      border: 1px solid rgba(92,184,92,0.4);
+      color: var(--green);
+    }
+
+    .form-status.err {
+      display: block;
+      background: var(--crimson-bg);
+      border: 1px solid rgba(192,24,42,0.45);
+      color: #e0616f;
+    }
+
+    .form-status.err a { color: var(--gold); }
+
+    /* ── FOOTER ───────────────────────────────────────────
+       Spacing is optical, not nominal: each margin is the target
+       gap minus the half-leading the adjacent line-heights add.
+       Intra-group ~6px  ·  inter-group ~27px  (4.5:1)
+    ------------------------------------------------------- */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--gold-faint);
+      padding: 32px 48px 26px;
+      text-align: center;
+    }
+
+    .footer-inner { max-width: 720px; margin: 0 auto; }
+
+    /* — GROUP 1: identity — */
+    .footer-lockup {
+      font-size: 20px;
+      justify-content: center;
+      margin-bottom: 22px;     /* +3.3 links half-leading = ~25px optical */
+      /* offset the wordmark's trailing letter-space so the lockup
+         sits on true optical centre, not box centre */
+      padding-left: var(--track-mark-ui);
+    }
+
+    /* — GROUP 2: navigation — */
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 0;        /* .footer-rule carries this gap now */
+    }
+
+    .footer-links a {
+      font-family: var(--display);
+      font-size: 9.5px;
+      letter-spacing: 2.5px;
+      line-height: 1.7;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    /* — GROUP 3: closing — */
+    /* Divider is a hinge, not a spacer: its total footprint replaces
+       the group gap rather than adding to it. Full-width neutral
+       hairline (same weight as .section-divider) with a gold core
+       centred on top — structure first, emphasis second. */
+    .footer-rule {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      border: 0;
+      margin: 13px auto;
+      background: var(--line);
+    }
+
+    .footer-rule::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 56px;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--gold-soft) 34%,
+        var(--gold-soft) 66%,
+        transparent 100%
+      );
+    }
+
+    .footer-scripture {
+      font-size: 12.5px;
+      font-style: italic;
+      line-height: 1.55;
+      color: var(--faint);
+      max-width: 600px;
+      margin: 0 auto 1px;      /* +3.4 +2.75 half-leading = ~7px optical */
+      text-wrap: balance;
+    }
+
+    .footer-scripture .cite { white-space: nowrap; }
+
+    .footer-legal {
+      font-family: var(--serif);
+      font-size: 11px;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      color: var(--faint);
+      margin: 0;
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 68px 48px 60px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      nav { padding: 14px 20px; gap: 12px; }
+      .nav-brand { font-size: 16px; align-items: center; }
+      .nav-brand .label { display: none; }
+      .footer-lockup { font-size: 18px; }
+      /* Section links collapse — the CTA never does */
+      .nav-links a:not(.nav-cta) { display: none; }
+      .nav-cta { padding: 10px 15px; font-size: 9.5px; letter-spacing: 1.5px; }
+
+      section { padding: 56px 22px; }
+      section.tight { padding: 44px 22px; }
+      .hero { padding: 52px 22px 48px; }
+      .code-section { padding: 56px 0; }
+      .code-inner, .form-inner { padding: 0 22px; }
+      .form-section { padding: 56px 0; }
+
+      .stat-block { padding: 28px 24px; }
+      .step { padding: 28px 24px; }
+      .scope-block, .authority-block, .validation-lead { padding: 24px 22px; }
+      .code-block { padding: 22px 18px; }
+      .code-block pre, .hero-demo pre { font-size: 11.5px; }
+
+      .request-form { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: 1; }
+
+      /* Pricing table becomes cards */
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr {
+        border: 1px solid var(--line);
+        margin-bottom: 12px;
+        padding: 6px 0;
+      }
+      .pricing-table tr:hover td { background: transparent; }
+      .pricing-table td {
+        border-bottom: none;
+        padding: 8px 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+      .pricing-table td::before {
+        content: attr(data-label);
+        font-family: var(--display);
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--muted);
+        flex-shrink: 0;
+      }
+
+      footer { padding: 26px 22px 22px; }
+      .footer-links { gap: 16px; }
+    }
+
+    /* ── ASV article pages ─────────────────────────────────── */
+    .page { padding: 72px 48px 40px; max-width: 800px; margin: 0 auto; }
+    .page-eyebrow { display: block; margin-bottom: 16px; }
+    section h2 { letter-spacing: 1px; }
+    .page h1 {
+      font-family: var(--display);
+      font-size: clamp(26px, 4.2vw, 40px);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 1.5px;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+    .page .lead {
+      font-size: 18px;
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .page .lead:last-of-type { margin-bottom: 0; }
+    .prose p { font-size: 17px; color: var(--text); line-height: 1.8; margin-bottom: 16px; }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose strong { color: var(--white); font-weight: 500; }
+    .prose code, .page code {
+      font-family: var(--mono);
+      font-size: 0.86em;
+      color: var(--gold);
+    }
+    .prose a, .page a.inline {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-faint);
+    }
+    .prose a:hover, .page a.inline:hover { border-bottom-color: var(--gold); }
+    .bullet-list {
+      list-style: none;
+      margin: 20px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .bullet-list li {
+      padding-left: 22px;
+      position: relative;
+      font-size: 16.5px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .bullet-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 8px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .numbered-list {
+      list-style: none;
+      margin: 20px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      counter-reset: steps;
+    }
+    .numbered-list li {
+      display: flex;
+      gap: 16px;
+      font-size: 16.5px;
+      color: var(--text);
+      line-height: 1.7;
+      counter-increment: steps;
+    }
+    .numbered-list li::before {
+      content: counter(steps, decimal-leading-zero);
+      font-family: var(--display);
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .status-banner {
+      margin-top: 28px;
+      padding: 22px 26px;
+      background: rgba(212,160,23,0.08);
+      border-left: 3px solid var(--amber);
+    }
+    .status-banner .status-kicker {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .status-banner p { font-size: 16px; color: var(--text); line-height: 1.75; margin-bottom: 10px; }
+    .status-banner p:last-child { margin-bottom: 0; }
+    .status-banner a { color: var(--gold); }
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px; }
+    .page-note { font-size: 15px; color: var(--muted); margin-top: 16px; line-height: 1.7; }
+    .nav-links a.is-active { color: var(--white); }
+    @media (max-width: 640px) {
+      .page { padding: 48px 22px 24px; }
+    }
+
+    .legal-meta {
+      margin-top: 20px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .legal-meta span { color: var(--faint); }
+    .prose h3 {
+      font-family: var(--display);
+      font-size: 1.05rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin: 28px 0 10px;
+    }
+    .prose ul {
+      margin: 0 0 16px 1.2em;
+      color: var(--text);
+    }
+    .prose li { margin-bottom: 8px; line-height: 1.7; }
+    .prose li strong { color: var(--white); font-weight: 500; }
+</style>
+</head>
+<body>
+  
+    <a href="#main" class="skip-link">Skip to content</a>
+  <div class="top-stripe"></div>
+
+  <nav>
+    <a href="/" class="nav-brand" aria-label="Arch theological review API — home">
+      <span class="lockup">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="wordmark">ARCH</span>
+      </span>
+      <span class="label label-sm">Theological Review API</span>
+    </a>
+    <div class="nav-links">
+      <a href="/theological-review-api">Review API</a>
+      <a href="/about">About</a>
+      <a href="/for-agents">For Agents</a>
+      <a href="/#how-it-works">How It Works</a>
+      <a href="/#specs">Specs</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#code">API Docs</a>
+      <a href="/#access" class="nav-cta">Get API Key</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <article class="page">
+      <div class="label page-eyebrow">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">This policy describes how <strong>Arch</strong> &mdash; the theological review API at <strong>arch.tnvolman.com</strong>, operated by The Forge &mdash; collects and uses information when you request an API key, sign in to the developer dashboard, attach a payment method, call <code>POST /v1/review</code>, or email us.</p>
+      <p class="legal-meta">Effective Date: 24 July 2026 &nbsp;&middot;&nbsp; Last Updated: 13 September 2026</p>
+    </article>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Who this covers</h2>
+      <div class="prose">
+        <p>This policy applies only to the public Arch API product on arch.tnvolman.com: the marketing pages, the &ldquo;Get API Key&rdquo; form, the developer dashboard, billing setup, and the review API. It does not apply to other sites or products we operate.</p>
+        <p>Arch is a review layer. It returns APPROVED, FLAGGED, or REJECTED with Scripture evidence. It does not write, preach, counsel, or speak to your users.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Information we collect</h2>
+      <div class="prose">
+        <h3>API key request</h3>
+        <p>The landing-page form posts to <code>/arch/request-access</code>. We require <strong>full name</strong> and <strong>email</strong>. You may also provide <strong>company or app name</strong> and a <strong>use-case</strong> description. Those four fields are stored with the issued key.</p>
+        <p>The form also asks for estimated monthly review volume and sends a consent flag, consent version (<code>privacy-2026-07-24</code>), and consent timestamp from your browser. Volume is used only as a form field on the page; the access endpoint does not persist volume, the consent flag, or the consent timestamp on the key record.</p>
+        <p>We issue an API key immediately (<code>arch_live_&hellip;</code>). The secret is shown once in the browser and emailed to you. We store a <strong>hash and prefix</strong> of the key, not the full secret, along with name, email, company, use case, a starter volume tier, and status (active, suspended, or revoked).</p>
+
+        <h3>Developer dashboard (email magic link)</h3>
+        <p>If you enter the email used for access, we post to <code>/arch/dashboard/login</code> and, when that email has an active key, email a one-time login link that expires in one hour. The response does not tell a caller whether the email has a key. After you open the link, we set an HTTP-only <code>arch_dash</code> cookie (SameSite=Lax, up to 7 days) so you can view usage, rotate the key, and start Stripe billing setup. You can log out, which clears the cookie.</p>
+
+        <h3>Billing</h3>
+        <p>Paid reviews require a card on file. We send you to Stripe Checkout (setup mode) to attach a payment method. We store a Stripe customer id and default payment-method id. Stripe handles card numbers; we do not store full card data. Each charged review writes a ledger row with payment-intent id, amount, currency, status, and the <strong>character count</strong> of the submitted text &mdash; not the text itself. Stripe metadata on the charge includes character count and an internal key id.</p>
+
+        <h3>Review API</h3>
+        <p><code>POST /v1/review</code> (and the legacy <code>/api/archguard/review</code> alias) accepts an <code>X-API-Key</code> header and a JSON body with the <strong>text</strong> to review (up to 50,000 characters), plus optional <code>max_tokens</code>, <code>payment_method_id</code>, and an idempotency key. We send that text through the Arch review pipeline to produce a verdict. We increment call count and last-used time on your key. Operational logs record request size (character count), not the full submitted text. Rate limits apply per API key (60 requests per minute on the public spec).</p>
+
+        <h3>Contact email</h3>
+        <p>If you write to <a href="mailto:api@tnvolman.com">api@tnvolman.com</a> or <a href="mailto:sanctuary@tnvolman.com">sanctuary@tnvolman.com</a>, we receive whatever you send in that message.</p>
+
+        <h3>Technical data</h3>
+        <p>We use your IP address to rate-limit key issuance. The site is served through Cloudflare and hosted on Railway; those providers see standard request metadata (IP, user agent, timestamps). Marketing pages load fonts from Google Fonts. We do not run a third-party advertising pixel or analytics tag on these pages.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>How we use information</h2>
+      <div class="prose">
+        <ul>
+          <li>Issue, authenticate, rotate, suspend, or revoke API keys</li>
+          <li>Email your key and dashboard magic links (via SendGrid, from sanctuary@tnvolman.com)</li>
+          <li>Notify the operator at sanctuary@tnvolman.com when a key is issued (name, email, company, use case, key prefix)</li>
+          <li>Charge per review through Stripe and show recent charges on the dashboard</li>
+          <li>Produce a theological verdict for the text you submit</li>
+          <li>Prevent abuse (rate limits) and answer support mail</li>
+        </ul>
+        <p>There is no subscription. Billing is pay-per-call after you attach a card. We do not sell your information. We do not use Arch account or review data for advertising.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Who we share with</h2>
+      <div class="prose">
+        <ul>
+          <li><strong>Stripe</strong> &mdash; customer record, payment method, and per-review charges</li>
+          <li><strong>SendGrid</strong> &mdash; transactional email (API key delivery and magic links)</li>
+          <li><strong>Cloudflare</strong> &mdash; CDN and edge for arch.tnvolman.com</li>
+          <li><strong>Railway</strong> &mdash; application hosting</li>
+          <li><strong>Google Fonts</strong> &mdash; typefaces on the marketing pages</li>
+        </ul>
+        <p>Submitted review text is processed by the Arch review pipeline in order to return a verdict. We do not sell that text. The charge ledger stores character count, not the text.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Cookies</h2>
+      <div class="prose">
+        <p>The only first-party cookie Arch sets is <code>arch_dash</code>, after a successful magic-link login. It is HTTP-only and used solely for the developer dashboard. Cloudflare may set cookies for security at the edge. We do not set advertising cookies.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Retention and your choices</h2>
+      <div class="prose">
+        <p>Key records and charge history are kept while we need them to operate the API, bill usage, and handle support. Magic-link tokens are single-use and expire after one hour. The dashboard cookie lasts up to seven days or until you log out.</p>
+        <p>You can rotate your key from the dashboard, stop calling the API at any time, or email us to correct account details or ask us to suspend or revoke a key. For access or deletion requests, write to <a href="mailto:api@tnvolman.com">api@tnvolman.com</a>.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Children</h2>
+      <div class="prose">
+        <p>Arch is a developer API. It is not directed at children, and we do not knowingly collect information from anyone under 16.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2>Changes</h2>
+      <div class="prose">
+        <p>If this policy changes, we will update the Last Updated date on this page. The access form currently sends consent version <code>privacy-2026-07-24</code> with the key request.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="form-section">
+      <div class="form-inner">
+        <h2>Contact</h2>
+        <div class="prose">
+          <p>Questions about this policy or your Arch account: <a href="mailto:api@tnvolman.com">api@tnvolman.com</a>. Operational mail for keys and dashboard links is sent from sanctuary@tnvolman.com.</p>
+        </div>
+        <div class="cta-row">
+          <a href="/#access" class="btn-primary">Get API Key</a>
+          <a href="/arch/dashboard" class="btn-secondary">Dashboard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <div class="section-divider"></div>
+
+  <footer>
+    <div class="footer-inner">
+
+      <div class="lockup footer-lockup">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="wordmark">ARCH</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="/theological-review-api">Theological Review API</a>
+        <a href="/about">About</a>
+        <a href="/for-agents">For Agents</a>
+        <a href="/#access">Get API Key</a>
+        <a href="/#code">API Docs</a>
+        <a href="https://sanctuary.tnvolman.com">Sanctuary</a>
+        <a href="https://forge.tnvolman.com">The Forge</a>
+        <a href="https://x.com/TNVOLMAN">@TNVOLMAN</a>
+        <a href="/arch/dashboard">Dashboard</a>
+        <a href="/privacy">Privacy</a>
+        <a href="mailto:api@tnvolman.com">Contact</a>
+      </div>
+
+      <hr class="footer-rule">
+
+      <p class="footer-scripture">
+        &ldquo;But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.&rdquo;&nbsp;<span class="cite">&mdash; Romans 5:8, KJV</span>
+      </p>
+
+      <p class="footer-legal">
+        Scripture from the King James Bible (1769). Public domain. &nbsp;&middot;&nbsp; &copy; 2026 The Forge. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+</body>
+</html>
