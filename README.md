@@ -19,6 +19,13 @@ Submit AI-generated theological content. Receive **APPROVED**, **FLAGGED**, or *
 
 Until the landing page is extracted here, production HTML is still served from the Forge Railway service (`templates/arch_landing.html`). This repo owns public marketing/docs once that cutover happens.
 
+## Legal pages
+
+- [`/privacy`](privacy/index.html) — Privacy Policy for the Arch API (API keys, email magic link, Stripe billing, review text, contact). Matches the live Arch inner-page design.
+- [`/arch/privacy`](arch/privacy/index.html) — alias used by the current live footer; redirects to `/privacy`.
+
+The live footer links Privacy only (no Terms). Do not add Journey Digital / Typewright / Freeborn branding on these pages.
+
 ## Ownership
 
 | Surface | Owner |
